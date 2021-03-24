@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/*===NAV BAR===*/
+.links {
+    width: 100%;
+}
+
+.links .nav-bar {
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.links .nav-bar .img-logo {
+    margin-right: 122px;
+}
+
+
+.links .nav-bar .link a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+
+
+/*===PROPAGANDA===*/
+
+.container {
+    max-width: 940px;
+    height: 366px;
+    background: #FBDFDB;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container .text {
+    max-width: 316px;
+    margin: auto 60px;
+}
+
+.container .text h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #111111;
+
+}
+
+.container .text h2 {
+    opacity: 0.7;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #000000;
+    line-height: 28px;
+}
+
+.container .chefe-img {
+    position: absolute;
+    bottom: 0px;
+    right: 100px;
+}
+
+/* ===CARDS=== */
+
+.title-card{
+    width: 100%;
+    margin-top: 50px;
+}
+
+.title-card h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+    max-width: 940px;
+    margin: 20px auto;
+}
+
+.cards {
+    max-width: 940px;
+    margin: 20 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.cards .card {
+    cursor: pointer;
+}
+
+.cards .card .card-img {
+    width: 300px;
+    height: 140px;
+}
+
+.cards .card .card-img img{
+    border-radius: 15px;
+    width: 100%;
+}
+
+.cards .card .card-inf {
+    margin: 15px 0;
+}
+
+.cards .card .card-inf h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #111111;
+    margin: 5px 0;
+}
+
+.cards .card .card-inf h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #777777;
+}
+
+/*===FOOTER===*/
+
+.footer{
+    width: 100%;
+    background: #EEEEEE;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.footer h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+    padding: 23px;
+}
+
+/* ===ABOUT=== */
+
+.about {
+    width: 100%;
+}
+
+.about .about-content {
+    max-width: 940px;
+    padding: 30px;
+    margin: 0 auto;
+    
+}   
+
+.about .about-content h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #111111;
+}
+
+.about .about-content p {
+    margin-top: 20;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+}
+
+/* ===MODAL=== */
+.modal-overlay{
+    background: rgba(0, 0, 0, 0.7); /*Fundo transparente*/
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay .modal {
+    margin: 20vh auto;
+    width: 660px;
+    height: 413px;
+    background: #ffffff;
+    border-radius: 16px;
+    position: relative;
+}
+
+.modal-overlay .modal .modal-content img {
+    width: 600px;
+    height: 200px;
+    border-radius: 16px;
+    margin: 30px;    
+}
+
+.modal-overlay .modal .modal-content .modal-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #111111;
+    text-align: center;
+}
+
+.modal-overlay .modal .modal-content .modal-chef {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+}
+
+.modal-overlay .modal .close-modal {
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    border: 1px #000000 solid;
+    border-radius: 50%;
+    padding: 5px;  
+    cursor: pointer;
+}
+
+/* ===MODAL ACTIVE=== */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
